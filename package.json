@@ -1,5 +1,5 @@
 {
-  "name": "html5-gauth",
+  "name": "browser-gauth-webapp",
   "version": "0.0.1",
   "description": "simple application for muti-factor authentication",
   "keywords": [
@@ -21,7 +21,11 @@
     "height": 480,
     "toolbar": false
   },
-  "dependencies": {},
+  "dependencies": {
+    "browser-jquery": "~1.10.2",
+    "browser-jquery-mobile": "1.4.1",
+    "jssha": "1.5.0"
+  },
   "devDependencies": {
     "express": "~3.4.8",
     "tiny-lr": "~0.0.5",
