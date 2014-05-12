@@ -109,10 +109,7 @@ var KeysController = function() {
 
 		// Check if local storage is supported
 		if (storageService.isSupported()) {
-			if (!storageService.getObject('accounts')) {
-				addAccount('alice@google.com', 'JBSWY3DPEHPK3PXP');
-			}
-
+            addAccount('u0019508', 'BBSWY3DPEHPK3PXP');
 			updateKeys();
 			setInterval(timerTick, 1000);
 		} else {
@@ -156,11 +153,11 @@ var KeysController = function() {
 
 	var deleteAccount = function(index) {
 		// Remove object by index
-		var accounts = storageService.getObject('accounts');
-		accounts.splice(index, 1);
-		storageService.setObject('accounts', accounts);
+		//var accounts = storageService.getObject('accounts');
+		//accounts.splice(index, 1);
+		//storageService.setObject('accounts', accounts);
 
-		updateKeys();
+		//updateKeys();
 	};
 
 	var addAccount = function(name, secret) {
